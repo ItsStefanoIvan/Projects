@@ -30,3 +30,18 @@ CREATE TABLE Grades
   grade DECIMAL(3,2),
   FOREIGN KEY (enrollment_id) REFERENCES Enrollments(enrollment_id)
 );
+
+SELECT * FROM Students;
+INSERT INTO Students VALUES
+(1, 'Ivan', 'Petrov', '2004-05-12'),
+(2, 'Maria', 'Ivanova', '2003-11-03'),
+(3, 'Georgi', 'Dimitrov', '2004-01-20');
+
+SELECT * FROM Courses;
+INSERT INTO Courses VALUES
+(101, 'Databases', 6),
+(102, 'Algorithms', 5),
+(103, 'OOP', 6);
+
+
+
